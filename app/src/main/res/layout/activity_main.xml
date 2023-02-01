@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/salmon">
+
+    <com.example.tempnotify.Thermometer
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/thermometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:innerColor="@color/blue"
+        app:middleColor="@color/white"
+        app:outerColor="@color/lightgrey"
+        app:radius="60dp"/>
+
+</RelativeLayout>
