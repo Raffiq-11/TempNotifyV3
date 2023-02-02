@@ -18,7 +18,7 @@ public class Thermometer extends View {
     private float middleCircleRadius, middleRectRadius;
     private Paint middlePaint;
     private float innerCircleRadius, innerRectRadius;
-    private Paint innerPaint;
+    public Paint innerPaint;
     private Paint degreePaint, graduationPaint;
 
     private static final int GRADUATION_TEXT_SIZE = 16; // in sp
@@ -52,8 +52,9 @@ public class Thermometer extends View {
     }
 
     public void setCurrentTemp(float currentTemp) {
-        if (currentTemp > 20) {
-            System.out.println("temperature is over twenty thats hot");
+
+        if (currentTemp < 0) {
+            System.out.println("temperature is under 0 thats cold");
         }
         if (currentTemp > maxTemp) {
             this.currentTemp = maxTemp;
@@ -77,6 +78,7 @@ public class Thermometer extends View {
         int outerColor = typedArray.getColor(R.styleable.Thermometer_outerColor, Color.GRAY);
         int middleColor = typedArray.getColor(R.styleable.Thermometer_middleColor, Color.WHITE);
         int innerColor = typedArray.getColor(R.styleable.Thermometer_innerColor, Color.RED);
+
 
         typedArray.recycle();
 
