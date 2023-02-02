@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 thermometer.innerPaint.setColor(Color.BLUE);
                 thermometer.innerPaint.setStyle(Paint.Style.FILL);
             } else {
-                thermometer.innerPaint.setColor(Color.DKGRAY);
+                thermometer.innerPaint.setColor(Color.rgb(125, 255, 170));
                 thermometer.innerPaint.setStyle(Paint.Style.FILL);
             }
 
