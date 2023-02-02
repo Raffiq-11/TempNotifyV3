@@ -52,10 +52,6 @@ public class Thermometer extends View {
     }
 
     public void setCurrentTemp(float currentTemp) {
-
-        if (currentTemp < 0) {
-            System.out.println("temperature is under 0 thats cold");
-        }
         if (currentTemp > maxTemp) {
             this.currentTemp = maxTemp;
         } else if (currentTemp < minTemp) {

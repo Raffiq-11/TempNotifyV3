@@ -2,7 +2,6 @@ package com.example.tempnotify;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.graphics.RenderNode;
 import android.util.DisplayMetrics;
 
 import java.util.Random;
